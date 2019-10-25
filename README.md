@@ -189,7 +189,7 @@ curl -X POST http://kong:8001/services/canary-service/plugins \
   --data "config.hour=10000" \
 ```
 ![Rate-Limit](https://github.com/vrusso-pivotal/kong-canary-demo/blob/master/assets/post-rate-limit.png)
-![Show-Rate-Limit](https://github.com/vrusso-pivotal/kong-canary-demo/blob/master/assets/show-rate-limit.png)
+![Show-Rate-Limit](https://github.com/vrusso-pivotal/kong-canary-demo/blob/master/assets/show-rate-limiting.png)
 
 Once applied you can reload the page and check the header to see the current request period, requests remaining and the timeouts of each setting. Use `curl -X PATCH` to change the rate-limiter configuration.
-![Rate-Limited](https://github.com/vrusso-pivotal/kong-canary-demo/blob/master/assets/rate-limited.png)
+![Rate-Limited](https://github.com/vrusso-pivotal/kong-canary-demo/blob/master/assets/rate-limiting.png)
