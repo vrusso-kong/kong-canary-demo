@@ -55,6 +55,15 @@ Using the below steps install Kong using a PostgresDB \[[Documentation](https://
 5. Verify Kong by cURL against the admin API at 8001
 
    `curl -i http://localhost:8001/`
+   
+   The response header should resemble this
+   >HTTP/1.1 200 OK  
+Date: Sat, 26 Oct 2019 01:31:49 GMT  
+Content-Type: application/json; charset=utf-8  
+Connection: keep-alive  
+Access-Control-Allow-Origin: *  
+Server: kong/1.3.0  
+Content-Length: 6626
 
 ## Spring Boot Application
 
